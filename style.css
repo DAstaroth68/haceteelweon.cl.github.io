@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #e0e0e0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #e0e0e0;
+    height: 50px;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #9c27b0;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.options-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.options-bar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.options-bar a:hover {
+    color: #9c27b0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh !important;
+    background: url(https://media0.giphy.com/media/ECvlptev6UZCGeSikQ/giphy.gif) no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 150px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #9c27b0;
+    color: #fff;
+    text-decoration: none;
+    background: #9c27b0;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: none;
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau {
+    padding: 30px;
+    background: url(https://i.makeagif.com/media/8-13-2019/0L-Fr_.gif) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box {
+    height: 11rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
+    margin: 2rem;
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #9c27b0;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #9c27b0;
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.about {
+    background: url(https://gifdb.com/images/high/albinauric-turning-head-elden-ring-yy50844tnsi0arm5.gif) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.price {
+    background: url(https://i.pinimg.com/originals/9f/7d/d3/9f7dd3bf98836240fd497a5fb30e0ed7.gif) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.contact {
+    padding-top: 20px;
+    background: url(https://media0.giphy.com/media/jS2pgTIhhTuAqneaF0/giphy.gif) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding-top: 0;
+}
+
+@media (max-width: 780px) {
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau {
+        height: 60vh;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
